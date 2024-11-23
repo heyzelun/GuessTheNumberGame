@@ -1,0 +1,36 @@
+﻿<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="GuessTheGame.MainPage">
+
+    <VerticalStackLayout Padding="30" Spacing="20">
+        <Label 
+            Text="Guess the Number Game"
+               FontSize="32"
+               FontAttributes="Bold"
+               HorizontalOptions="Center"
+               TextColor="BlueViolet" />
+
+        <Label
+            x:Name="ResultLabel"
+               Text="Enter a number between 1 and 100"
+               FontSize="24"
+               HorizontalOptions="Center" />
+
+        <Entry
+            x:Name="GuessEntry"
+               Placeholder="Enter your guess"
+               Keyboard="Numeric"
+               FontSize="24" />
+
+        <Button 
+            Text="Submit Guess"
+                FontSize="24"
+                Clicked="OnSubmitGuessClicked" />
+
+        <Label
+            x:Name="AttemptsLabel"
+               Text="Attempts: 0"
+               FontSize="24"
+               HorizontalOptions="Center" />
+    </VerticalStackLayout>
+</ContentPage>
